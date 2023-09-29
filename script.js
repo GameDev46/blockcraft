@@ -19,7 +19,7 @@
 
 // import THREE.JS by Mr Doob https://threejs.org
 
-import * as THREE from '../three/three.module.min.js';
+import * as THREE from '..three/three.module.min.js';
 
 import { PointerLockControls } from './three/PointerLockControls.js';
 
