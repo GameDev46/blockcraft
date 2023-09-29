@@ -21,14 +21,14 @@
 
 import * as THREE from '../three/three.module.min.js';
 
-import { PointerLockControls } from '/three/PointerLockControls.js';
+import { PointerLockControls } from './three/PointerLockControls.js';
 
-import { Sky } from '/three/sky.js';
+import { Sky } from './three/sky.js';
 
-import { perlin } from '/perlin.js';
+import { perlin } from './perlin.js';
 
-import { vertexShader, fragmentShader } from '/three/grassShader.js';
-import { waterVertexShader, waterFragmentShader } from '/three/waterShader.js';
+import { vertexShader, fragmentShader } from './three/grassShader.js';
+import { waterVertexShader, waterFragmentShader } from './three/waterShader.js';
 
 let scene, camera, renderer, cube, clock, mouseDown, middleButtonDown, rightClickDown, mobileFingerMovementPos, keyboard, mobileEuler, controls, gravity, chunks, chunkSize, voxelSize, worldHeight, worldSize, worldObjects, pointer, lastMouseDown, hasLocked, landscapeOctaves, landscapeHeightMultiplier, renderedVoxels, waterLevel, renderDistance, activeChunks, geometryCache, seed, tntToExplode, blastRadius, treeSpawnChance, waterPlanes, waterTimer, uniforms, sky, sun, directionalLight, ambience, breakBlockTimer, daylightCycle, seedOffset, grassUniforms, grassMaterials, waterUniforms, waterMaterials, grassTimeOffsets;
 
