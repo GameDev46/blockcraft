@@ -60,7 +60,7 @@ let hotBar = {
 			document.getElementById("count" + hotBar.inventory[i].position).style.opacity = 1;
 
 			document.getElementById("count" + hotBar.inventory[i].position).innerText = hotBar.inventory[i].count;
-			document.getElementById("slot" + hotBar.inventory[i].position).children[0].src = "/textures/" + hotBar.inventory[i].type + ".png";
+			document.getElementById("slot" + hotBar.inventory[i].position).children[0].src = "./textures/" + hotBar.inventory[i].type + ".png";
 
 		}
 
@@ -154,43 +154,43 @@ gravity = player.gravity;
 let sceneLoader = new THREE.TextureLoader();
 
 let textureLoader = {
-	grass: sceneLoader.load('/textures/grass.png'),
-	dirt: sceneLoader.load('/textures/dirt.png'),
-	stone: sceneLoader.load('/textures/stone.png'),
-	wood: sceneLoader.load('/textures/wood.png'),
-	sand: sceneLoader.load('/textures/sand.png'),
-	bricks: sceneLoader.load('/textures/bricks.png'),
-	water: sceneLoader.load('/textures/water.png'),
-	bark: sceneLoader.load('/textures/wood.png'),
-	bark2: sceneLoader.load('/textures/bark2.png'),
-	leaves: sceneLoader.load('/textures/leaves.png'),
-	leavesAlpha: sceneLoader.load('/textures/leavesAlpha.png'),
-	leaves2: sceneLoader.load('/textures/leaves2.png'),
-	tnt: sceneLoader.load('/textures/tnt.png'),
-	glass: sceneLoader.load('/textures/glass.png'),
-	glassAlpha: sceneLoader.load('/textures/glassAlpha.png'),
-	grassTuft: sceneLoader.load('/textures/grass.png'),
-	grassTuftAlpha: sceneLoader.load('/textures/grassTuftAlpha.png'),
-	grassTuftAlpha2: sceneLoader.load('/textures/grassTuftAlpha2.png'),
-	flower: sceneLoader.load('/textures/flower.png'),
-	flowerAlpha: sceneLoader.load('/textures/flowerAlpha.png'),
-	flower2: sceneLoader.load('/textures/flower2.png'),
-	flower2Alpha: sceneLoader.load('/textures/flower2Alpha.png'),
-	flower3: sceneLoader.load('/textures/flower3.png'),
-	flower3Alpha: sceneLoader.load('/textures/flower2Alpha.png'),
-	flower4: sceneLoader.load('/textures/flower4.png'),
-	flower4Alpha: sceneLoader.load('/textures/flower4Alpha.png'),
-	selectionCube: sceneLoader.load('/textures/selectionCube.png'),
-	selectionCubeAlpha: sceneLoader.load('/textures/selectionCubeAlpha.png'),
-	selectionCubeDigging1Alpha: sceneLoader.load('/textures/selectionCubeDigging1Alpha.png'),
-	selectionCubeDigging2Alpha: sceneLoader.load('/textures/selectionCubeDigging2Alpha.png'),
-	selectionCubeDigging3Alpha: sceneLoader.load('/textures/selectionCubeDigging3Alpha.png')
+	grass: sceneLoader.load('./textures/grass.png'),
+	dirt: sceneLoader.load('./textures/dirt.png'),
+	stone: sceneLoader.load('./textures/stone.png'),
+	wood: sceneLoader.load('./textures/wood.png'),
+	sand: sceneLoader.load('./textures/sand.png'),
+	bricks: sceneLoader.load('./textures/bricks.png'),
+	water: sceneLoader.load('./textures/water.png'),
+	bark: sceneLoader.load('./textures/wood.png'),
+	bark2: sceneLoader.load('./textures/bark2.png'),
+	leaves: sceneLoader.load('./textures/leaves.png'),
+	leavesAlpha: sceneLoader.load('./textures/leavesAlpha.png'),
+	leaves2: sceneLoader.load('./textures/leaves2.png'),
+	tnt: sceneLoader.load('./textures/tnt.png'),
+	glass: sceneLoader.load('./textures/glass.png'),
+	glassAlpha: sceneLoader.load('./textures/glassAlpha.png'),
+	grassTuft: sceneLoader.load('./textures/grass.png'),
+	grassTuftAlpha: sceneLoader.load('./textures/grassTuftAlpha.png'),
+	grassTuftAlpha2: sceneLoader.load('./textures/grassTuftAlpha2.png'),
+	flower: sceneLoader.load('./textures/flower.png'),
+	flowerAlpha: sceneLoader.load('./textures/flowerAlpha.png'),
+	flower2: sceneLoader.load('./textures/flower2.png'),
+	flower2Alpha: sceneLoader.load('./textures/flower2Alpha.png'),
+	flower3: sceneLoader.load('./textures/flower3.png'),
+	flower3Alpha: sceneLoader.load('./textures/flower2Alpha.png'),
+	flower4: sceneLoader.load('./textures/flower4.png'),
+	flower4Alpha: sceneLoader.load('./textures/flower4Alpha.png'),
+	selectionCube: sceneLoader.load('./textures/selectionCube.png'),
+	selectionCubeAlpha: sceneLoader.load('./textures/selectionCubeAlpha.png'),
+	selectionCubeDigging1Alpha: sceneLoader.load('./textures/selectionCubeDigging1Alpha.png'),
+	selectionCubeDigging2Alpha: sceneLoader.load('./textures/selectionCubeDigging2Alpha.png'),
+	selectionCubeDigging3Alpha: sceneLoader.load('./textures/selectionCubeDigging3Alpha.png')
 }
 
 let normalLoader = {
-	water: sceneLoader.load('/normals/waterNormal.png'),
-	leaves: sceneLoader.load('/normals/leavesNormal.png'),
-	grass: sceneLoader.load('/normals/leavesNormal.png')
+	water: sceneLoader.load('./normals/waterNormal.png'),
+	leaves: sceneLoader.load('./normals/leavesNormal.png'),
+	grass: sceneLoader.load('./normals/leavesNormal.png')
 }
 
 let waterData = {
